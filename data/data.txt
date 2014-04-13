@@ -1,0 +1,43 @@
+{
+	"data":
+	{
+		"work":[
+			{
+				"title":"Flash Developer",
+				"location":"Hoodlum",
+				"dates":[{from:"", to:""},{from:"",to:""}],
+				"image":"images/something.jpg",
+				"description": ""
+			},
+			
+			
+		],
+		
+		"education":[
+			{
+				"title":"Bachelor Of Multimedia",
+				"location":"Griffith University",
+				"dates":[{from:"", to:""}],
+				"image":"images/something.jpg",
+				"description": ""
+			},
+		],
+		
+		"projects":[
+			{
+				"title":"Slide",
+				"location":"Hoodlum",
+				"dates":[{from:"", to:""}],
+				"image":"images/something.jpg",
+				"description": ""
+			}
+		
+		]
+		
+		"skills":[
+			{
+			
+			}
+		]
+	}
+}
