@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css"></link>
 </head>
 <script src="js/jquery-1.11.0.js" type="text/javascript" > </script>
+<script type="js/masonry.pkgd" type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript" > </script>
 
 
