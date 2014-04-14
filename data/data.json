@@ -5,10 +5,10 @@
 			{
 				"title":"Flash Developer",
 				"location":"Hoodlum",
-				"dates":[{from:"", to:""},{from:"",to:""}],
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/something.jpg",
 				"description": ""
-			},
+			}
 			
 			
 		],
@@ -17,22 +17,22 @@
 			{
 				"title":"Bachelor Of Multimedia",
 				"location":"Griffith University",
-				"dates":[{from:"", to:""}],
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/something.jpg",
 				"description": ""
-			},
+			}
 		],
 		
 		"projects":[
 			{
 				"title":"Slide",
 				"location":"Hoodlum",
-				"dates":[{from:"", to:""}],
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/something.jpg",
 				"description": ""
 			}
 		
-		]
+		],
 		
 		"skills":[
 			{
