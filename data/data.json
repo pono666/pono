@@ -1,43 +1,159 @@
 {
-	"data":
-	{
-		"work":[
+		"work":
+		[
+			{
+				"title":"Contract Flash Developer",
+				"location":"Just Digital People",
+				"dates":[{"from":"01/02/14", "to":"Present"}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatibus magnam facilis error corporis beatae non minus eius unde doloremque ipsum ratione voluptate qui ut esse quod a dignissimos deserunt."
+			},
+			{
+				"title":"Flash Developer",
+				"location":"Intrepica",
+				"dates":[{"from":"01/01/01", "to":"01/01/01"},{"from":"02/02/02","to":"02/02/02"}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatibus magnam facilis error corporis beatae non minus eius unde doloremque ipsum ratione voluptate qui ut esse quod a dignissimos deserunt."
+			},
+			{
+				"title":"Flash Developer",
+				"location":"Sega Studios Australia",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, optio, aliquam ut maxime doloribus numquam voluptate magni molestiae placeat modi consequatur adipisci accusamus impedit repellat odit saepe obcaecati quis et!"
+			},
 			{
 				"title":"Flash Developer",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"images/something.jpg",
-				"description": ""
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
+			}
+			,
+			{
+				"title":"Flash Developer",
+				"location":"Liquid Interactive",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
+			},
+			{
+				"title":"Tutor",
+				"location":"Griffith University",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
+			},
+			{
+				"title":"Web Developer",
+				"location":"Mt. Gravatt TAFE",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
 			}
 			
 			
 		],
 		
-		"education":[
+		"education":
+		[
 			{
 				"title":"Bachelor Of Multimedia",
 				"location":"Griffith University",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"images/something.jpg",
-				"description": ""
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
+			},
+			{
+				"title":"Certificate in I.T.",
+				"location":"Southbank TAFE",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
+			},
+			{
+				"title":"Diploma Of Multimedia",
+				"location":"Mt. Gravatt TAFE",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
+			},
+			{
+				"title":"Certificate in Digital Art",
+				"location":"Mt. Gravatt TAFE",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
 			}
 		],
 		
-		"projects":[
+		"projects":
+		[
+			{
+				"title":"LiteracyPlanet",
+				"location":"Intrepica",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			},
+			{
+				"title":"WordMania Facebook Australia / Malaysia 2013",
+				"location":"Intrepica",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			},
+			{
+				"title":"WordMania Facebook Australia 2012",
+				"location":"Intrepica",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			},
+			{
+				"title":"London 2012: The Official Video Game",
+				"location":"Sega Studios Australia",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			},
+			{
+				"title":"Dance Academy",
+				"location":"Hoodlum",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lead Developer. 2011 KidScreen Awards: Best Television Companion Site WINNER"
+			},
 			{
 				"title":"Slide",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"images/something.jpg",
-				"description": ""
-			}
-		
-		],
-		
-		"skills":[
+				"image":"http://www.placehold.it/200x200",
+				"description": "2011 AIMIA Awards: Best Cross Platform Nominee,2011 AIMIA Awards: Best Use of Social Media Nominee, 2011 AIMIA Awards: Best In Class WINNER, 2012 Webby Awards: Best In Class Nominee, 2012 International Emmy: Digital Program: Children and Young People Nominee"
+			},
 			{
-			
+				"title":"Primeval Evolved",
+				"location":"Hoodlum",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			},
+			{
+				"title":"Dharma Wants you",
+				"location":"Hoodlum",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "International Emmy Award"
 			}
+			,
+			{
+				"title":"Batman: Who's the Villian",
+				"location":"Liquid Interactive",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			}
+		
 		]
-	}
+	
 }
