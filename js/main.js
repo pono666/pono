@@ -1,32 +1,31 @@
 var _dataJSON;
 var _dataBlocks = [];
+var _dataBlocksTyped = {};
 var _dataBlockDisplays = [];
 var _msnry; 
 
-$(window).load(function() {
-	//alert("Loaded");
-	$.getJSON("data/data.json", function(json, textStatus) {
-			
-			_dataJSON = json;
-			//console.log(_dataJSON.work);
-			//$.each(_dataJSON, function (i, fb) {
-		    //    console.log(i + fb);
-		   // });
-			 parseJSON();
-			 createDataBlockDisplays();
-			 setupMasonry();
+$(window).load(function() {	
+	if(!_dataJSON){
+		$.getJSON("data/data.json", function(json, textStatus) {
+				
+				_dataJSON = json;
+				 parseJSON();
+				 createDataBlockTypedDisplays(_currentSelectedPage);
+				 setupMasonry();
+				 createMobileMenuToggle();
 
 
 
-	}).fail(function(jqXHR, status, error){
-    if(status == 'parseerror'){
-      console.log("parseError");
-    } else {
-      console.log("other");
-    }
+		}).fail(function(jqXHR, status, error){
+	    if(status == 'parseerror'){
+	      console.log("parseError");
+	    } else {
+	      console.log("other");
+	    }})
+	}
 
    
-})
+
 
 	
 });
@@ -34,12 +33,15 @@ $(window).load(function() {
 function parseJSON(){
 	$.each(_dataJSON, function(index, val) {
 		var dataTypedArray = val;
+		_dataBlocksTyped[index] = [];
+
 		for (var i = 0; i < dataTypedArray.length; i++) {
 			var obj = dataTypedArray[i];
 
 			var newDataBlock = new dataBlock(index, obj.title, obj.location, obj.dates, obj.image, obj.description);
 			console.log(newDataBlock.dates)
 			_dataBlocks.push(newDataBlock);
+			_dataBlocksTyped[index].push(newDataBlock);
 		};
 	});
 }
@@ -50,8 +52,17 @@ function createDataBlockDisplays(){
 		_dataBlockDisplays.push(dataBlockDisplay);
 		$("#Content").append(dataBlockDisplay);
 	};
+}
 
-
+function createDataBlockTypedDisplays($type){
+	var arr = _dataBlocksTyped[$type];
+	if(arr){
+		for (var i = 0; i < arr.length; i++) {
+			var dataBlockDisplay = createDataBlockDisplay(arr[i]);
+			_dataBlockDisplays.push(dataBlockDisplay);
+			$("#Content").append(dataBlockDisplay);
+		};
+	}
 }
 
 //object
@@ -106,6 +117,45 @@ function createDataBlockDisplay($dataBlock){
 
 }
 
+function createMobileMenuToggle(){
+	
+	var mm = $("#MobileMenu");
+	var mmheight = mm.height();
+	mm.css({
+		height: '0'
+	});
+	mm.hide();
+
+	$(".mobileMenuToggle").click(function(event) {
+		
+		if(mm.height() == 0){
+			mm.show().animate({height: mmheight});
+		}else{
+			mm.animate({
+				height: 0},
+				 function() {
+					mm.hide()
+			});
+		}
+	});
+
+}
+
+var _currentSelectedPage;
+
+function handleMenuForCurrentPage($currentPageId){
+	$('#' + $currentPageId).css({
+		'background-color': '#000'
+	});
+	$('#' + $currentPageId).children('a').css({
+		color: '#FFF'
+	});
+	
+		_currentSelectedPage = $currentPageId;
+	
+	
+
+}
 
 
 //-----------------------------------------------Masonary Stuff

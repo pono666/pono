@@ -1,58 +1,71 @@
 {
-		"work":
+
+		
+		"home":
+		[
+			{
+				"title":"HOME",
+				"location":"Intrepica",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			}
+		
+		],
+		"employers":
 		[
 			{
 				"title":"Contract Flash Developer",
 				"location":"Just Digital People",
-				"dates":[{"from":"01/02/14", "to":"Present"}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"February 2014", "to":"Present"}],
+				"image":"images/justdigitalpeople.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatibus magnam facilis error corporis beatae non minus eius unde doloremque ipsum ratione voluptate qui ut esse quod a dignissimos deserunt."
 			},
 			{
 				"title":"Flash Developer",
 				"location":"Intrepica",
-				"dates":[{"from":"01/01/01", "to":"01/01/01"},{"from":"02/02/02","to":"02/02/02"}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"September 2012", "to":"November 2013"}],
+				"image":"images/intrepica.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatibus magnam facilis error corporis beatae non minus eius unde doloremque ipsum ratione voluptate qui ut esse quod a dignissimos deserunt."
 			},
 			{
-				"title":"Flash Developer",
+				"title":"UI Programmer",
 				"location":"Sega Studios Australia",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"June 2011", "to":"June 2012"}],
+				"image":"images/ssa.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, optio, aliquam ut maxime doloribus numquam voluptate magni molestiae placeat modi consequatur adipisci accusamus impedit repellat odit saepe obcaecati quis et!"
 			},
 			{
 				"title":"Flash Developer",
 				"location":"Hoodlum",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"April 2010", "to":"May 2011"},{"from":"June 2008","to":"April 2009"}],
+				"image":"images/hoodlum.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
 			}
 			,
 			{
 				"title":"Flash Developer",
 				"location":"Liquid Interactive",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"April 2009", "to":"March 2010"},{"from":"December 2006","to":"May 2008"}],
+				"image":"images/liquidinteractive.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
 			},
 			{
 				"title":"Tutor",
 				"location":"Griffith University",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"March 2005", "to":"June 2006"}],
+				"image":"images/griffithuniversity.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
 			},
 			{
-				"title":"Web Developer",
+				"title":"Web Developer Traineeship",
 				"location":"Mt. Gravatt TAFE",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"March 2000", "to":"June 2001"}],
+				"image":"images/mtgravatttafe.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
 			}
 			
-			
+
 		],
 		
 		"education":
@@ -60,29 +73,29 @@
 			{
 				"title":"Bachelor Of Multimedia",
 				"location":"Griffith University",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
+				"dates":[{"from":"March 2003", "to":"November 2006"}],
+				"image":"images/griffithuniversity.jpg",
+				"description": "Final GPA: 6.348. Griffith Award for Academic Excellence 2004, 2005, 2006"
 			},
 			{
 				"title":"Certificate in I.T.",
 				"location":"Southbank TAFE",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"April 2000", "to":"April 2001"}],
+				"image":"images/southbanktafe.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
 			},
-			{
+			{ 
 				"title":"Diploma Of Multimedia",
 				"location":"Mt. Gravatt TAFE",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"February 1999", "to":"December 1999"}],
+				"image":"images/mtgravatttafe.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
 			},
 			{
 				"title":"Certificate in Digital Art",
 				"location":"Mt. Gravatt TAFE",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"dates":[{"from":"February 1998", "to":"December 1998"}],
+				"image":"images/mtgravatttafe.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
 			}
 		],
@@ -149,6 +162,19 @@
 			{
 				"title":"Batman: Who's the Villian",
 				"location":"Liquid Interactive",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"http://www.placehold.it/200x200",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			}
+		
+		]
+		,
+		
+		"skills":
+		[
+			{
+				"title":"AS3",
+				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"http://www.placehold.it/200x200",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
