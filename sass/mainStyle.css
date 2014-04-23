@@ -1,0 +1,17 @@
+menu {
+  text-align: center; }
+  menu ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+    height: 100%; }
+  menu li {
+    cursor: pointer;
+    display: inline-block;
+    width: 15%;
+    background-color: #FFF;
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0 0 10px 10px; }
+  menu li:hover {
+    background-color: #ccc; }

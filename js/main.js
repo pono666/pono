@@ -77,7 +77,7 @@ function dataBlock($type, $title, $location, $dates, $imageURL, $description){
 
 function createDataBlockDisplay($dataBlock){
 	var display = $("<div></div>").attr({
-		class: 'dataBlockDisplay gigante ' + $dataBlock.type
+		class: 'dataBlockDisplay ' + $dataBlock.type
 	});
 	var title = $("<span class='displayBlock'>"+ $dataBlock.title +" | <span class='bold'>" + $dataBlock.location + "</span></span>");
 	var discription = $("<span  class='displayBlock'>"+ $dataBlock.description +"</span>");

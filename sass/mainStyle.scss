@@ -1,0 +1,32 @@
+
+html, body{
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+
+menu{
+	text-align :center;
+	ul{
+		margin: 0 auto;
+		padding: 0;
+		width: 800px;
+		height: 100%;
+	}
+
+	li{
+		cursor: pointer;
+		display: inline-block;
+		width: 15%;
+		background-color: #FFF;
+		border: 1px solid black;
+		border-top: none;
+		border-radius: 0 0 10px 10px;
+	}
+
+	li:hover{
+		background-color:#ccc;
+	} 
+
+} 
