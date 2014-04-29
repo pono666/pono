@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <title>APP</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link href="sass/mainStyle.css" rel="stylesheet">
+
+
     <!--<link rel="stylesheet" href="css/main.css"></link>-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,9 +29,13 @@
      Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js" type="text/javascript" > </script>
-
+    
   </head>
   <body>
+    <div class="xsListener"></div>
+    <div class="smListener"></div>
+    <div class="mdListener"></div>
+    <div class="lgListener"></div>
     <?php
 
       $pageToInclude;
@@ -68,53 +78,89 @@
 
 
     ?>
-    <div class="mainContainerWrapper">
-    <div class="container">
-      <div class="row">
-        <span class="col-xs-12 col=sm-8 col-md-8 col-md-offset-2 text-right headerName"><h1> Anthony Paul Ponomarenko</h1></span>
-        <span class="col-xs-12 col-sm-4 col-md-8 col-md-offset-2 text-right headerTitle" > WEB / FLASH DEVELOPER</span>
-        
-      </div>
-      <div class="mobileMenuToggle">
-        <span class="mobileIcon"></span>
-      </div>
-      
-    </div>
+    <div class="menuPadding-xs visible-xs"></div>
+    <div class="menuPadding hidden-xs"></div>
+    <div class="container-fluid">
+    
 
-    <div class="navbar navbar-inverse">
-      <div class="container ">
-        <div class="navbar-header">
-          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
-            <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span> 
-            
-          </button>
+      <div class="navbar navbar-inverse  navbar-fixed-top black" role="navigation">
+        <div class="container">
+          <div class="row">
+            <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>             
+            </button> 
+            <span class="col-xs-12 text-right hidden-xs">
+              
+              <h1 class="navbar-text-right " style="color:#FFF"> Anthony Ponomarenko<br />
+              <small>WEB / FLASH DEVELOPER</small></h1>
+            </span>
+
+            <span class="xs-header text-right visible-xs">
+              <h3 class="navbar-text-right" style="color:#FFF"> Anthony Ponomarenko<br />
+              <small>WEB / FLASH DEVELOPER</small></h3>             
+            </span>
+
+           
         </div>
-        <div class="navbar-collapse collapse ">
-          <ul class="nav navbar-nav  navbar-right ">
-            <li class="active"><a href="?">Home</a></li>
-            <li><a href="?education">Education</a></li>
-            <li><a href="?skills">Skills</a></li>
-            <li><a href="?employers">Employers</a></li>
-            <li><a href="?projects">Projects</a></li>
-            <li><a href="?contact">Contact</a></li>
-          </ul>
+          <div class="navbar-header visible-xs">
+           
+          </div>
+          <div class="navbar-collapse collapse ">
+            <ul class="nav navbar-nav ">
+              <li id="home"><a href="?">Home</a></li>
+              <li id="education" ><a href="?education">Education</a></li>
+
+              <li id="employers" ><a href="?employers">Employers</a></li>
+              <li id="projects" ><a href="?projects">Projects</a></li>
+              <li id="contact" ><a href="?contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-   
+     
 
-    <div id="Content" class="content">
-      
-    </div>
-    <div class="footer">
+      <div class="container">
+        <div id="Content" class="row content">
+          <div id ="homePageStuff" class="jumbotron  hidden">
+            <h2>Welcome</h2>
+            <p class="override">My name is Anthony Ponomarenko. This site serves as a personal portfolio and also to develop my skills in Web Development. It is constantly evolving to incorporate what I am currently researching. It also serves as a reminder to myself of what I have achieved in my career and gives an insight into my journey through the wonderful world of Multimedia Development.</p>
+            <p>You may have noticed the greyscaleness of this site. I am in fact colourblind, I have Deuteranopia. I get the same questions whenever someone finds out so to circumvent this I provide the following link <a target="_blank" href="http://www.colourblindawareness.org/colour-blindness/colour-blindness-experience-it/">to see what I see.</a></p>
+            <span id="MoreButton" class="btn btn-black btn-lg">More...</span>
 
+            <div id="hiddenHomeText" class="hidden">
+              <h2>A little about me</h2>
+              <p> For the past 8 years I have been a Flash Developer, however I have been working with Flash for over 15 years. I class myself as being a Flash Developer when I started using AS3 and OOP to create projects.</p>
+
+              <h3>In the beginning...</h3>
+              <p>It all started at High School when in my graphics class we started learning CAD. I never really use a computer prior to this in any other way apart from writing reports and playing Doom. I enjoyed it thoroughly, being able to create something technical on a computer. This led me to start studying Engineering once I completed grade 12.</p>
+              <p>After a year of engineering I decided it wasnt for me. I enjoyed the computer and practical subjects however the rest didnt capture me as I thought it would. I dropped out and looked for something more creative.</p>
+
+              <h3>The introduction to computer generated creativity</h3>
+              <p>I had always had a creative streak and always loved computers and technology. These two areas of my persona were allowed to run free when I started the Certificate in Digital Art. I didnt consider it study, I considered it play. We would use Flash and Photoshop to create Art. It was so satisfying to see something being created in a new media that was just starting to find its feet and being able to show my works not only in print but also on computer. </p>
+
+              <p>After a year of play I continued into the newly created Diploma of Multimedia. Here we used Flash, Photoshop, Premier, Director, Maya and a slew of other programs not to art, but to create viable products that could be used by others. Our final project was for the Brisbane City Council, A guide to Brisbane Skateparks on CD-ROM that is still available to this day in state run libraries. The Guide contained an interactive map of the locations of the Skateparks with Quicktime VR and 3D renders of the skateparks along with video </p>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+     
+
+
+     
       
     </div>
 
   </div>
-
-   
+    
+    <div class="footerPadding"></div>
+    <footer>
+        <div> </div>
+        <span >Mob: <a >+61 423 300 300</a> | Email: <a  href"mailto:antpono@gmail.com">antpono@gmail.com</a></span>
+    </footer>
   </body>
 </html>

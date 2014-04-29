@@ -7,62 +7,62 @@
 				"title":"HOME",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+				"image":"http://www.placehold.it/100x100",
+				"description": "<div class='jumbotron'> <h1>Hello, world!</h1>  <p><a class='btn btn-primary btn-lg' role='button'>Learn more</a></p></div>"
 			}
 		
 		],
 		"employers":
-		[
+		[			
 			{
 				"title":"Contract Flash Developer",
 				"location":"Just Digital People",
-				"dates":[{"from":"February 2014", "to":"Present"}],
+				"dates":[{"from":"Feb '14", "to":"Present"}],
 				"image":"images/justdigitalpeople.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatibus magnam facilis error corporis beatae non minus eius unde doloremque ipsum ratione voluptate qui ut esse quod a dignissimos deserunt."
+				"description": "I am currently working as a contract flash developer."
 			},
 			{
 				"title":"Flash Developer",
 				"location":"Intrepica",
-				"dates":[{"from":"September 2012", "to":"November 2013"}],
+				"dates":[{"from":"Sept '12", "to":"Nov '13"}],
 				"image":"images/intrepica.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatibus magnam facilis error corporis beatae non minus eius unde doloremque ipsum ratione voluptate qui ut esse quod a dignissimos deserunt."
+				"description": "The majority of work at Intrepica was on their flagship product 'LiteracyPlanet'. This involved updating old and creating new flash based elements. I created a Facebook app for their yearly 'WordMania' promotion in '12 and '13, along with some web development in '13."
 			},
 			{
 				"title":"UI Programmer",
 				"location":"Sega Studios Australia",
-				"dates":[{"from":"June 2011", "to":"June 2012"}],
+				"dates":[{"from":"Jun '11", "to":"Jun '12"}],
 				"image":"images/ssa.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, optio, aliquam ut maxime doloribus numquam voluptate magni molestiae placeat modi consequatur adipisci accusamus impedit repellat odit saepe obcaecati quis et!"
+				"description": "I worked on UI elements for Official '12 Olympics Games game using Flash and Scaleform to create menus, HUDs and in game elements. I also fulfilled a personal goal of working for a gaming company."
 			},
 			{
 				"title":"Flash Developer",
 				"location":"Hoodlum",
-				"dates":[{"from":"April 2010", "to":"May 2011"},{"from":"June 2008","to":"April 2009"}],
+				"dates":[{"from":"Apr '10", "to":"May '11"},{"from":"Jun '08","to":"Apr '09"}],
 				"image":"images/hoodlum.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
+				"description": "At Hoodlum I was involved in creating Flash content to the highest standard for world class clients. Many projects went on to win awards such as Emmys and Baftas. There were tight deadlines and many, many paid for dinners but i look back at this time with great satisfaction. I worked with many talented friends and we created some wonderful projects"
 			}
 			,
 			{
 				"title":"Flash Developer",
 				"location":"Liquid Interactive",
-				"dates":[{"from":"April 2009", "to":"March 2010"},{"from":"December 2006","to":"May 2008"}],
+				"dates":[{"from":"Apr '09", "to":"Mar '10"},{"from":"Dec '06","to":"May '08"}],
 				"image":"images/liquidinteractive.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
+				"description": "Liquid was my first and third job into my career. I worked on a great deal of education materials that had to meet strict educational standards. I was instumental in udating their Flash Development processes, bringing the knowledge to upskill their lead developer from AS2 to AS3"
 			},
 			{
 				"title":"Tutor",
 				"location":"Griffith University",
-				"dates":[{"from":"March 2005", "to":"June 2006"}],
+				"dates":[{"from":"Mar '05", "to":"Jun '06"}],
 				"image":"images/griffithuniversity.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
+				"description": "Being a Tutor when I was a student myself was a great benefit. Teaching others what I had learnt in the previous few years solidified my knowledge and confirmed my passion for the subject."
 			},
 			{
-				"title":"Web Developer Traineeship",
+				"title":"Multimedia Developer Traineeship",
 				"location":"Mt. Gravatt TAFE",
-				"dates":[{"from":"March 2000", "to":"June 2001"}],
+				"dates":[{"from":"Mar '00", "to":"Jun '01"}],
 				"image":"images/mtgravatttafe.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem dolorum excepturi sunt accusantium ipsa deleniti! Deleniti facere aperiam sed delectus excepturi tempore dolores molestias ratione ea consectetur. Enim, quos."
+				"description": "I was a Multimedia Developer when Multimedia was still a buzz word. I created many education and promotional materials for the TAFE across a broad selection of media; video, audio, web, flash etc. It was a time when most of these materials were delivered via CD-ROM"
 			}
 			
 
@@ -71,32 +71,39 @@
 		"education":
 		[
 			{
+				"title":"Web Development",
+				"location":"Self Taught",
+				"dates":[{"from":"Dec '13", "to":"Present"}],
+				"image":"http://www.placehold.it/100x100",
+				"description": "Since being made redudent and the obvious lack of Flash Dev jobs with the inevitable death of Flash coming, I have decided to upskill in Web Development. I have always had a basic knowledge of Web Development which has allowed me to grow on those skills quite easily. I am now proficient in HTML5, CSS3, Javascript, Jquery and Bootstrap and have limited skills with PHP and Apache Server."
+			},
+			{
 				"title":"Bachelor Of Multimedia",
 				"location":"Griffith University",
-				"dates":[{"from":"March 2003", "to":"November 2006"}],
+				"dates":[{"from":"Mar '03", "to":"Nov '06"}],
 				"image":"images/griffithuniversity.jpg",
-				"description": "Final GPA: 6.348. Griffith Award for Academic Excellence 2004, 2005, 2006"
+				"description": "I majored in Interactive Entertainment; 2d and 3d Game Development. Final GPA: 6.348. Griffith Award for Academic Excellence '04, '05, '06. The course covered all areas of multimedia development including design, sound & video production, documentation and project management. The major covered game design, 2d/3d asset creation and OOP game programming."
 			},
 			{
 				"title":"Certificate in I.T.",
 				"location":"Southbank TAFE",
-				"dates":[{"from":"April 2000", "to":"April 2001"}],
+				"dates":[{"from":"Apr '00", "to":"Apr '01"}],
 				"image":"images/southbanktafe.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
+				"description": "This was a basic I.T. course I completed as part of a traineeship at Mt. Gravatt TAFE. I learnt how to build a computer, the basics of networking along with other generic I.T. skills. "
 			},
 			{ 
 				"title":"Diploma Of Multimedia",
 				"location":"Mt. Gravatt TAFE",
-				"dates":[{"from":"February 1999", "to":"December 1999"}],
+				"dates":[{"from":"Feb '99", "to":"Dec '99"}],
 				"image":"images/mtgravatttafe.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
 			},
 			{
 				"title":"Certificate in Digital Art",
 				"location":"Mt. Gravatt TAFE",
-				"dates":[{"from":"February 1998", "to":"December 1998"}],
+				"dates":[{"from":"Feb '98", "to":"Dec '98"}],
 				"image":"images/mtgravatttafe.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
+				"description": "This was the initial course that set me on the path to my career. It consisted mostly of art projects, half real life installations and half using computers. It was my introduction to  Photoshop and Flash, two programs I would still use to this day"
 			}
 		],
 		
@@ -106,56 +113,56 @@
 				"title":"LiteracyPlanet",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"image":"http://www.placehold.it/100x100",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			},
 			{
-				"title":"WordMania Facebook Australia / Malaysia 2013",
+				"title":"WordMania Facebook Australia / Malaysia '13",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"image":"http://www.placehold.it/100x100",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			},
 			{
-				"title":"WordMania Facebook Australia 2012",
+				"title":"WordMania Facebook Australia '12",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"image":"http://www.placehold.it/100x100",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			},
 			{
-				"title":"London 2012: The Official Video Game",
+				"title":"London '12: The Official Video Game",
 				"location":"Sega Studios Australia",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"image":"http://www.placehold.it/100x100",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			},
 			{
 				"title":"Dance Academy",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
-				"description": "Lead Developer. 2011 KidScreen Awards: Best Television Companion Site WINNER"
+				"image":"http://www.placehold.it/100x100",
+				"description": "Lead Developer. '11 KidScreen Awards: Best Television Companion Site WINNER"
 			},
 			{
 				"title":"Slide",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
-				"description": "2011 AIMIA Awards: Best Cross Platform Nominee,2011 AIMIA Awards: Best Use of Social Media Nominee, 2011 AIMIA Awards: Best In Class WINNER, 2012 Webby Awards: Best In Class Nominee, 2012 International Emmy: Digital Program: Children and Young People Nominee"
+				"image":"http://www.placehold.it/100x100",
+				"description": "'11 AIMIA Awards: Best Cross Platform Nominee,'11 AIMIA Awards: Best Use of Social Media Nominee, '11 AIMIA Awards: Best In Class WINNER, '12 Webby Awards: Best In Class Nominee, '12 International Emmy: Digital Program: Children and Young People Nominee"
 			},
 			{
 				"title":"Primeval Evolved",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"image":"http://www.placehold.it/100x100",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			},
 			{
 				"title":"Dharma Wants you",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"image":"http://www.placehold.it/100x100",
 				"description": "International Emmy Award"
 			}
 			,
@@ -163,7 +170,7 @@
 				"title":"Batman: Who's the Villian",
 				"location":"Liquid Interactive",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"image":"http://www.placehold.it/100x100",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			}
 		
@@ -176,7 +183,7 @@
 				"title":"AS3",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/200x200",
+				"image":"http://www.placehold.it/100x100",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			}
 		

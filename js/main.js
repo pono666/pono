@@ -11,8 +11,8 @@ $(window).load(function() {
 				_dataJSON = json;
 				 parseJSON();
 				 createDataBlockTypedDisplays(_currentSelectedPage);
-				 setupMasonry();
-				 createMobileMenuToggle();
+				 //setupMasonry();
+				 //createMobileMenuToggle();
 
 
 
@@ -22,13 +22,59 @@ $(window).load(function() {
 	    } else {
 	      console.log("other");
 	    }})
-	}
-
+	};
+	addMoreButtonPress();
+	
    
 
 
 	
 });
+
+var currentPageSize;
+function getCurrentPageSize(){
+	var pageSize;
+	if($(".xsListener").css("float") == "none"){
+		pageSize = "xs";
+	}else if($(".smListener").css("float") == "none"){
+		pageSize = "sm";
+	}else if($(".mdListener").css("float") == "none"){
+		pageSize = "md";
+	}else if($(".lgListener").css("float") == "none"){
+		pageSize = "lg";
+	}
+	return pageSize;
+}
+
+function testIfResizingNeeded(){
+	
+	var pageSize =  getCurrentPageSize();
+	if(currentPageSize !=  pageSize){
+		currentPageSize = pageSize;
+		resizeMe();
+		
+	}
+
+}
+
+$(window).resize(function(event) {
+	testIfResizingNeeded();
+});
+
+
+function addMoreButtonPress(){
+	$("#MoreButton").click(function(event) {
+		$("#hiddenHomeText").toggleClass('hidden');
+		if($("#MoreButton").text() == "More..."){
+			$("#MoreButton").text('Less...');
+		}else{
+			$("#MoreButton").text('More...')
+		}
+		
+	});
+
+}
+
 
 function parseJSON(){
 	$.each(_dataJSON, function(index, val) {
@@ -39,7 +85,7 @@ function parseJSON(){
 			var obj = dataTypedArray[i];
 
 			var newDataBlock = new dataBlock(index, obj.title, obj.location, obj.dates, obj.image, obj.description);
-			console.log(newDataBlock.dates)
+			
 			_dataBlocks.push(newDataBlock);
 			_dataBlocksTyped[index].push(newDataBlock);
 		};
@@ -55,14 +101,77 @@ function createDataBlockDisplays(){
 }
 
 function createDataBlockTypedDisplays($type){
-	var arr = _dataBlocksTyped[$type];
-	if(arr){
-		for (var i = 0; i < arr.length; i++) {
-			var dataBlockDisplay = createDataBlockDisplay(arr[i]);
-			_dataBlockDisplays.push(dataBlockDisplay);
-			$("#Content").append(dataBlockDisplay);
-		};
+	if($type == "home"){
+		$("#homePageStuff").removeClass('hidden');
+	}else{
+
+
+
+		var arr = _dataBlocksTyped[$type];
+		if(arr){
+			var display = $("<div id='blockDisplay'></div>").attr({
+				class: 'row '
+			})
+			
+			for (var i = 0; i < arr.length; i++) {
+				var dataBlockDisplay = createDataBlockDisplay(arr[i]);
+				_dataBlockDisplays.push(dataBlockDisplay); 				
+				display.append(dataBlockDisplay);
+				var j = i+1;
+				if(j%2 ==0 ){
+					display.append("<div class='clearfix visible-sm'></div>");
+					
+				}
+				if( j%3 == 0){
+					display.append("<div class='clearfix visible-md '></div>");
+				}
+				if( j%4 == 0){
+					display.append("<div class='clearfix  visible-lg'></div>");
+				}
+				
+				
+			};
+ 
+
+
+
+
+			$("#Content").append(display);
+			
+			testIfResizingNeeded();
+		}
 	}
+}
+
+
+
+var lastHightest = 0;
+function resizeMe(){
+	console.log("resize",currentPageSize)
+	
+	var highest = 0;
+	var display = $("#blockDisplay")
+	$.each(display.find(".dataBlockDisplay"), function(index, val) {
+		$(val).css({
+			height: '100%'
+		});
+		if($(val).height()> highest){
+			highest = $(val).height();
+		}
+	});
+
+
+	if(lastHightest != highest ){
+		lastHightest = highest;
+		if(currentPageSize !="xs"){
+		console.log("resize1" ,(currentPageSize !="xs"))
+		$.each(display.find(".dataBlockDisplay"), function(index, val) {
+			console.log(val , highest);
+			$(val).height(highest);				
+		})
+		}
+	}
+
 }
 
 //object
@@ -74,6 +183,112 @@ function dataBlock($type, $title, $location, $dates, $imageURL, $description){
 	this.imageURL = $imageURL;
 	this.description = $description;
 }
+function createDataBlockDisplay($dataBlock){
+	/*var display = $("<div></div>").attr({
+		class: 'row ' + $dataBlock.type
+	});
+*/
+	var outside =  $("<div></div>").attr({
+		class: 'col-xs-12 col-sm-6 col-md-4 col-lg-3'
+	})
+
+	var sizing = $("<div></div>").attr({
+		class: 'dataBlockDisplay '
+	})
+
+	var imageDiv = $("<div></div>").attr({
+		class: 'dataBlockDisplayImage'
+	});
+
+	var image = $("<img></img>").attr({		
+		src: $dataBlock.imageURL,	
+		width: '100px',
+		height: '100px'
+	})
+
+	imageDiv.append(image);
+	sizing.append(imageDiv);
+
+
+	var textDiv = $("<div></div>").attr({
+		class: 'dataBlockDisplayText'
+	}); 
+	var textDiv2 = $("<div></div>").attr({
+		//class: 'dataBlockDisplayText'
+	}); 
+
+	var title = $("<h4 class='displayBlock'>"+ $dataBlock.title +" <br /> <small>" + $dataBlock.location + "</small></h4>");
+	var discription = $("<p  class='displayBlock' style='margin:auto'>"+ $dataBlock.description +"</p>");
+
+	var dates = $("<p  class='displayBlock'></p>");
+	$.each($dataBlock.dates, function(index, val) {
+		dates.append( val.from + " - " + val.to + "<br />");
+
+	});
+	
+
+	textDiv.append(title);
+	if($dataBlock.type != "projects"){
+
+		textDiv.append(dates);
+	}
+	
+	textDiv2.append(discription);
+	
+	sizing.append(textDiv);
+	sizing.append(textDiv2);
+	outside.append(sizing)
+	return outside;
+
+}
+/*
+function createDataBlockDisplayBSThubnail($dataBlock){
+
+	var sizing = $("<div></div>").attr({
+		class: 'col-xs-12 col-sm-6 col-md-4 col-lg-3'
+	});
+
+	var thumbnail = $("<div></div>").attr({
+		class: 'thumbnail'
+	});
+
+	//display.append(sizing);
+	sizing.append(thumbnail)
+
+
+	var image = $("<img></img>").attr({		
+		src: $dataBlock.imageURL,	
+		width: '100px',
+		height: '100px'
+	});
+
+	thumbnail.append(image);
+
+
+	var textDiv = $("<div></div>").attr({
+		class: 'caption'
+	}); 
+
+	var title = $("<h4 class='displayBlock'>"+ $dataBlock.title +" | <small>" + $dataBlock.location + "</small></h4>");
+	var discription = $("<p  class='displayBlock'>"+ $dataBlock.description +"</p>");
+
+	var dates = $("<p  class='displayBlock'></p>");
+	$.each($dataBlock.dates, function(index, val) {
+		dates.append( val.from + " - " + val.to + "<br />");
+
+	});
+	
+
+	textDiv.append(title);
+	textDiv.append(dates);
+	textDiv.append(discription);
+	
+	thumbnail.append(textDiv);
+	return sizing;
+
+}
+
+
 
 function createDataBlockDisplay($dataBlock){
 	var display = $("<div></div>").attr({
@@ -86,7 +301,6 @@ function createDataBlockDisplay($dataBlock){
 	$.each($dataBlock.dates, function(index, val) {
 		dates.append("from: " + val.from + ", to: " + val.to + "<br />");
 
-		 /* iterate through array or object */
 	});
 	
 
@@ -139,17 +353,18 @@ function createMobileMenuToggle(){
 		}
 	});
 
-}
+}*/
 
 var _currentSelectedPage;
 
 function handleMenuForCurrentPage($currentPageId){
-	$('#' + $currentPageId).css({
-		'background-color': '#000'
-	});
-	$('#' + $currentPageId).children('a').css({
+
+	$('#' + $currentPageId).addClass('active')
+
+	console.log($('#' + $currentPageId).css)
+	/*$('#' + $currentPageId).children('a').css({
 		color: '#FFF'
-	});
+	});*/
 	
 		_currentSelectedPage = $currentPageId;
 	
@@ -163,7 +378,7 @@ function handleMenuForCurrentPage($currentPageId){
 //var msnry = new Masonary( '#Content' , {}) // or with JQuery Plugin
 //var $container = $('#Content');
 //$container.masonary({columnWidth:200, itemSelector: '.dataBlockDisplay'});
-
+/*
 
 function setupMasonry(){
 	//_msnry = new Masonry( '#Content' , {columnWidth:500, itemSelector: '.dataBlockDisplay'})
@@ -187,8 +402,4 @@ function setupMasonry(){
 	};
 
 }
-
-
-			  
-
-
+*/
