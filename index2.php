@@ -25,6 +25,8 @@
     <![endif]-->
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.11.0.js"  > </script>
+    <script src="js/jquery.validate.js"  > </script>
+    <script src="js/additional-methods.js"  > </script>
    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
      Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
@@ -83,8 +85,9 @@
     <div class="container-fluid">
     
 
-      <div class="navbar navbar-inverse  navbar-fixed-top black" role="navigation">
-        <div class="container">
+      <div  class="navbar navbar-inverse  navbar-fixed-top black" role="navigation">
+       
+        <div id="HeaderContainer" class="container">
           <div class="row">
             <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
               <span class="sr-only">Toggle navigation</span>
@@ -120,11 +123,11 @@
           </div>
         </div>
       </div>
-     
+      <div id="blackrule"></div>
 
       <div class="container">
         <div id="Content" class="row content">
-          <div id ="homePageStuff" class="jumbotron  hidden">
+          <div id ="homePageStuff" class="jumbotron hidden col-xs-12 col-sm-8 col-sm-offset-2">
             <h2>Welcome</h2>
             <p class="override">My name is Anthony Ponomarenko. This site serves as a personal portfolio and also to develop my skills in Web Development. It is constantly evolving to incorporate what I am currently researching. It also serves as a reminder to myself of what I have achieved in my career and gives an insight into my journey through the wonderful world of Multimedia Development.</p>
             <p>You may have noticed the greyscaleness of this site. I am in fact colourblind, I have Deuteranopia. I get the same questions whenever someone finds out so to circumvent this I provide the following link <a target="_blank" href="http://www.colourblindawareness.org/colour-blindness/colour-blindness-experience-it/">to see what I see.</a></p>
@@ -143,8 +146,57 @@
 
               <p>After a year of play I continued into the newly created Diploma of Multimedia. Here we used Flash, Photoshop, Premier, Director, Maya and a slew of other programs not to art, but to create viable products that could be used by others. Our final project was for the Brisbane City Council, A guide to Brisbane Skateparks on CD-ROM that is still available to this day in state run libraries. The Guide contained an interactive map of the locations of the Skateparks with Quicktime VR and 3D renders of the skateparks along with video </p>
             </div>
-
           </div>
+
+            <div id="contactPageStuff" class="hidden jumbotron col-xs-12 col-sm-8 col-sm-offset-2">
+            <h2>Contact me</h2>
+              <form id="contactForm" class="form-horizontal" action="">
+                <fieldset>      
+                  
+                  <div class="form-group has-feedback" style="position:relative">
+                    <label class="col-xs-3 control-label text-right" for="formName">Name:</label>
+                      <div class="col-xs-9">
+                         <input id="formName" name="formName" type="text" class="form-control input-md" placeholder="Enter your name">
+                         <span class="glyphicon form-control-feedback" id="formName1"></span>
+                      </div>               
+                  </div>
+
+                  <div class="form-group has-feedback">
+                    <label class="col-xs-3 control-label text-right" for="formEmail">Email:</label>
+                      <div class="col-xs-9">
+                         <input id="formEmail" name="formEmail" class="form-control input-md" placeholder="Enter your email" type="email">
+                         <span class="glyphicon form-control-feedback" id="formEmail1"></span>
+                      </div>               
+                  </div>
+
+                  <div class="form-group has-feedback">
+                    <label class="col-xs-3 control-label text-right" for="formConfirmEmail">Confirm Email:</label>
+                      <div class="col-xs-9">
+                         <input id="formConfirmEmail" name="formConfirmEmail" class="form-control input-md" placeholder="Confirm email" type="email">
+                         <span class="glyphicon form-control-feedback" id="formConfirmEmail1"></span>
+                      </div>               
+                  </div>
+
+                  <div class="form-group has-feedback">
+                    <label class="col-xs-3 control-label text-right">Enquiry:</label>
+                    <div class="col-xs-9">
+                       <textarea id="formEnquiryText" name="formEnquiryText" type="text-area" class="form-control" placeholder="Enter your enquiry" style="resize:vertical" ></textarea>
+                       <span class="glyphicon form-control-feedback" id="formEnquiryText1"></span>
+                    </div>
+                  </div>
+
+                             
+
+                  <div class="text-right">                
+                    <input class="btn btn-black" value="Submit" type="submit">
+                  </div>
+
+                </fieldset>
+
+
+              </form>
+            </div>
+
         </div>
         </div>
       </div>
@@ -160,7 +212,11 @@
     <div class="footerPadding"></div>
     <footer>
         <div> </div>
-        <span >Mob: <a >+61 423 300 300</a> | Email: <a  href"mailto:antpono@gmail.com">antpono@gmail.com</a></span>
+        <span class="glyphicon glyphicon-earphone"></span>
+        <span> <a >+61 423 300 300</a> </span>
+        <span style="width:20px;display:inline-block;"></span>
+          <span class="glyphicon glyphicon-envelope"></span> 
+          <span><a  href"mailto:antpono@gmail.com">antpono@gmail.com</a></span>
     </footer>
   </body>
 </html>

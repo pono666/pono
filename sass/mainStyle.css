@@ -19,18 +19,42 @@ footer {
     color: grey;
     cursor: pointer; }
 
+#HeaderContainer {
+  background-repeat: no-repeat;
+  background-image: url("../images/meheader.jpg");
+  background-position: left top;
+  background-size: auto 100%; }
+
+#blackrule {
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  margin: -15px;
+  padding: 0; }
+
 .navbar.black {
   background-color: #000; }
 
 .jumbotron p {
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 18px; }
 
 .container .jumbotron {
   background-color: #DDD;
-  border-radius: 20px; }
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px #666666; }
 
 .jumbotron {
   padding: 20px; }
+
+.form-control {
+  font-size: 16px; }
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 0; }
 
 /* This should be around line 4713 in your bootstrap.css */
 .navbar-collapse.collapse {
@@ -54,13 +78,18 @@ footer {
   margin: 0; }
 
 .navbar-nav > li > a {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 300; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: transparent; }
 
 .navbar-inverse .navbar-toggle {
   border: 2px solid #FFF;
   float: left;
   padding: 14px 15px;
-  margin: 15px 0 0 10px; }
+  margin: 15px 0 0 10px;
+  background-color: rgba(255, 255, 255, 0.3); }
 
 .btn-black {
   color: #FFF;
@@ -76,6 +105,9 @@ footer {
 
 .xs-header > h3 {
   padding-right: 10px;
+  margin-top: 11px; }
+
+.jumbotron > h2 {
   margin-top: 11px; }
 
 .xsListener {
@@ -128,7 +160,7 @@ h4 small {
 .dataBlockDisplay {
   border-radius: 10px;
   margin-bottom: 15px;
-  box-shadow: 0px 5px 5px #666;
+  box-shadow: 0px 5px 5px #666666;
   padding: 0px 10px 10px 10px;
   background-color: #DDD; }
 
@@ -143,10 +175,15 @@ h4 small {
   padding-left: 10px; }
 
 .menuPadding-xs {
-  padding-top: 95px; }
+  padding-top: 85px; }
 
 .menuPadding {
   padding-top: 180px; }
 
 .footerPadding {
-  padding-top: 45px; }
+  padding-top: 40px; }
+
+#formEnquiryText {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 300px; }

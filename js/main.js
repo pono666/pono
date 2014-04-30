@@ -3,6 +3,7 @@ var _dataBlocks = [];
 var _dataBlocksTyped = {};
 var _dataBlockDisplays = [];
 var _msnry; 
+var currentPageSize;
 
 $(window).load(function() {	
 	if(!_dataJSON){
@@ -24,15 +25,113 @@ $(window).load(function() {
 	    }})
 	};
 	addMoreButtonPress();
-	
-   
-
+	addValidate();
+   //	currentPageSize =  getCurrentPageSize();
+   //testIfResizingNeeded();
 
 	
 });
 
-var currentPageSize;
+
+
+function addValidate(){
+
+	/*$('#submitBtn').click(function(event) {
+		console.log("submit")
+		$('#contactForm').validate();
+	});
+
+	$('#contactForm').submit(function(event) {
+		console.log("submit2")
+		$('#contactForm').validate();
+	});
+
+	jQuery.validator.setDefaults({
+		debug: true,
+		success: "valid"
+	});*/
+	$( "#contactForm" ).validate({
+		rules: {
+			
+			formName:{
+				required: true
+			},
+			formEmail: {
+				required: true,
+				email: true
+			},
+			formConfirmEmail:{
+				required: true,
+				equalTo : formEmail
+			},
+			formEnquiryText:{
+				required:true
+			}
+		},
+		messages:{
+			formEmail:{
+				required: 'Enter Something Dammit',
+				email: 'Me needs a real email'
+			}
+
+		},
+		
+		highlight: function(element) {
+	        var id_attr = "#" + $( element ).attr("id") + "1";
+	      	//$(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+	      	$(element).closest('div').removeClass('has-success').addClass('has-error');
+	        $(id_attr).removeClass('glyphicon-ok').addClass('glyphicon-remove');        
+	    },
+	    unhighlight: function(element) {
+	        var id_attr = "#" + $( element ).attr("id") + "1";
+	       // $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+	       $(element).closest('div').removeClass('has-error').addClass('has-success');
+	        $(id_attr).removeClass('glyphicon-remove').addClass('glyphicon-ok');    
+	        $(element).popover('destroy');
+
+	    },
+		submitHandler: function (form) {
+	            alert('is good');
+	            return false;
+	        }
+		,
+		//errorElement: 'span',
+	    //errorClass: 'help-block',
+	    errorPlacement: function(error, element) {
+	    	
+	    	if(currentPageSize != "xs"){
+	    		console.log("screw u ")
+		    	$(element).attr({
+		    		'data-container' : 'body',
+		    		'data-toggle': 'popover',
+		    		'data-placement' : 'right',
+		    		'data-content': error[0].innerHTML
+		    	});
+		    	$("<div></div>").addClass('popover')
+	    		$(element).popover('show');
+	    	}else{
+	    		error.insertAfter(element);
+	    	}
+	    	
+	    	
+            if(element.length) {
+                //error.insertAfter(element);
+            } else {
+           // error.insertAfter(element);
+            }
+        } 
+
+	});
+	
+
+
+}
+
+
 function getCurrentPageSize(){
+	
+	//$(".form-control").popover('hide');
+	//$(".form-control").popover('show');
 	var pageSize;
 	if($(".xsListener").css("float") == "none"){
 		pageSize = "xs";
@@ -44,6 +143,8 @@ function getCurrentPageSize(){
 		pageSize = "lg";
 	}
 	return pageSize;
+	
+	//
 }
 
 function testIfResizingNeeded(){
@@ -51,14 +152,13 @@ function testIfResizingNeeded(){
 	var pageSize =  getCurrentPageSize();
 	if(currentPageSize !=  pageSize){
 		currentPageSize = pageSize;
-		resizeMe();
-		
+		resizeMe();		
 	}
-
 }
 
 $(window).resize(function(event) {
 	testIfResizingNeeded();
+	$(".form-control").popover("destroy");
 });
 
 
@@ -103,10 +203,10 @@ function createDataBlockDisplays(){
 function createDataBlockTypedDisplays($type){
 	if($type == "home"){
 		$("#homePageStuff").removeClass('hidden');
+	}else if($type == "contact"){
+		$("#contactPageStuff").removeClass('hidden');
+			
 	}else{
-
-
-
 		var arr = _dataBlocksTyped[$type];
 		if(arr){
 			var display = $("<div id='blockDisplay'></div>").attr({
@@ -119,28 +219,21 @@ function createDataBlockTypedDisplays($type){
 				display.append(dataBlockDisplay);
 				var j = i+1;
 				if(j%2 ==0 ){
-					display.append("<div class='clearfix visible-sm'></div>");
-					
+					display.append("<div class='clearfix visible-sm'></div>");					
 				}
 				if( j%3 == 0){
 					display.append("<div class='clearfix visible-md '></div>");
 				}
 				if( j%4 == 0){
 					display.append("<div class='clearfix  visible-lg'></div>");
-				}
-				
-				
+				}				
 			};
  
-
-
-
-
-			$("#Content").append(display);
+			$("#Content").append(display);			
 			
-			testIfResizingNeeded();
 		}
 	}
+	testIfResizingNeeded();
 }
 
 
@@ -366,7 +459,7 @@ function handleMenuForCurrentPage($currentPageId){
 		color: '#FFF'
 	});*/
 	
-		_currentSelectedPage = $currentPageId;
+	_currentSelectedPage = $currentPageId;
 	
 	
 
