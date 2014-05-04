@@ -2,7 +2,7 @@ var _dataJSON;
 var _dataBlocks = [];
 var _dataBlocksTyped = {};
 var _dataBlockDisplays = [];
-var _msnry; 
+var _msnry;
 var currentPageSize;
 
 $(window).load(function() {	
@@ -24,7 +24,7 @@ $(window).load(function() {
 	      console.log("other");
 	    }})
 	};
-	addMoreButtonPress();
+	
 	addValidate();
    //	currentPageSize =  getCurrentPageSize();
    //testIfResizingNeeded();
@@ -35,21 +35,7 @@ $(window).load(function() {
 
 
 function addValidate(){
-
-	/*$('#submitBtn').click(function(event) {
-		console.log("submit")
-		$('#contactForm').validate();
-	});
-
-	$('#contactForm').submit(function(event) {
-		console.log("submit2")
-		$('#contactForm').validate();
-	});
-
-	jQuery.validator.setDefaults({
-		debug: true,
-		success: "valid"
-	});*/
+	
 	$( "#contactForm" ).validate({
 		rules: {
 			
@@ -77,38 +63,51 @@ function addValidate(){
 		},
 		
 		highlight: function(element) {
-	        var id_attr = "#" + $( element ).attr("id") + "1";
-	      	//$(element).closest('.form-group').removeClass('has-success').addClass('has-error');
-	      	$(element).closest('div').removeClass('has-success').addClass('has-error');
-	        $(id_attr).removeClass('glyphicon-ok').addClass('glyphicon-remove');        
-	    },
-	    unhighlight: function(element) {
-	        var id_attr = "#" + $( element ).attr("id") + "1";
-	       // $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
-	       $(element).closest('div').removeClass('has-error').addClass('has-success');
-	        $(id_attr).removeClass('glyphicon-remove').addClass('glyphicon-ok');    
-	        $(element).popover('destroy');
+			if($(element).closest('div').hasClass('has-success') || 
+				!$(element).closest('div').hasClass('has-success') && !$(element).closest('div').hasClass('has-error')){
+		        var id_attr = "#" + $( element ).attr("id") + "1";
+		      	//$(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+		      	$(element).closest('div').removeClass('has-success').addClass('has-error');
+		        $(id_attr).removeClass('glyphicon-ok').addClass('glyphicon-remove');  
+
+		        console.log("highlight")
+		    }
 
 	    },
-		submitHandler: function (form) {
-	            alert('is good');
-	            return false;
-	        }
+	    unhighlight: function(element) {
+	    	if($(element).closest('div').hasClass('has-error')|| 
+				!$(element).closest('div').hasClass('has-success') && !$(element).closest('div').hasClass('has-error')){
+		        var id_attr = "#" + $( element ).attr("id") + "1";
+		       // $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+		       $(element).closest('div').removeClass('has-error').addClass('has-success');
+		        $(id_attr).removeClass('glyphicon-remove').addClass('glyphicon-ok');    
+		        $(element).popover('destroy');
+		       	console.log("unhighlight")
+	       }
+
+	    },
+		submitHandler: submitContactForm
 		,
 		//errorElement: 'span',
 	    //errorClass: 'help-block',
 	    errorPlacement: function(error, element) {
 	    	
 	    	if(currentPageSize != "xs"){
-	    		console.log("screw u ")
-		    	$(element).attr({
-		    		'data-container' : 'body',
-		    		'data-toggle': 'popover',
-		    		'data-placement' : 'right',
-		    		'data-content': error[0].innerHTML
-		    	});
-		    	$("<div></div>").addClass('popover')
-	    		$(element).popover('show');
+
+	    		var show  = false;
+				if(!$(element).attr('data-toggle')){
+					  show = true;
+	    		}
+					$(element).attr({
+						'data-container' : 'body',
+						'data-toggle': 'popover',
+						'data-placement' : 'right',
+						'data-content': error[0].innerHTML,
+						'data-trigger': 'manual'
+		    		});
+					$("<div></div>").addClass('popover');					
+					$(element).popover('show');   
+					
 	    	}else{
 	    		error.insertAfter(element);
 	    	}
@@ -122,16 +121,51 @@ function addValidate(){
         } 
 
 	});
-	
-
-
 }
 
+function submitContactForm(form){
+	
+
+	$("#contactSubmitBtn").button('loading');
+	$(".form-control-feedback").removeClass('glyphicon-ok').removeClass('glyphicon-remove');
+
+	$(form).find('input').attr({
+		disabled: 'disabled'
+	});
+	$(form).find('textarea').attr({
+		disabled: 'disabled'
+	});
+	var data = {};
+	data["name"] = $("#formName").val();
+	data["email"] = $("#formEmail").val();
+	data["enquiry"] = $("#formEnquiryText").val()
+
+	$.post('php/sendMailScript.php', {data: data}, function(data, textStatus) {
+		//optional stuff to do after success 
+		
+		$(".form-control-feedback").removeClass('glyphicon-ok').removeClass('glyphicon-remove')
+	}).success(function(){
+		resetForm(form);
+		$(form).trigger('reset');
+		$("<span class='label label-success'>Enquiry sent.</span>").insertBefore('#contactSubmitBtn');
+		
+		//alert('is good');
+	}).fail(function(){
+		//alert('is fail');
+		resetForm(form);
+		$("<span class='label label-danger'>There was an error, please try again later.</span>").insertBefore('#contactSubmitBtn');
+	})
+	return false;
+}
+
+function resetForm(form){
+	$("#contactSubmitBtn").button('reset');
+		$(form).find('input').removeAttr('disabled');
+		$(form).find('textarea').removeAttr('disabled');
+}
 
 function getCurrentPageSize(){
 	
-	//$(".form-control").popover('hide');
-	//$(".form-control").popover('show');
 	var pageSize;
 	if($(".xsListener").css("float") == "none"){
 		pageSize = "xs";
@@ -142,9 +176,7 @@ function getCurrentPageSize(){
 	}else if($(".lgListener").css("float") == "none"){
 		pageSize = "lg";
 	}
-	return pageSize;
-	
-	//
+	return pageSize;	
 }
 
 function testIfResizingNeeded(){
@@ -162,6 +194,7 @@ $(window).resize(function(event) {
 });
 
 
+// add the homepage button press
 function addMoreButtonPress(){
 	$("#MoreButton").click(function(event) {
 		$("#hiddenHomeText").toggleClass('hidden');
@@ -202,7 +235,13 @@ function createDataBlockDisplays(){
 
 function createDataBlockTypedDisplays($type){
 	if($type == "home"){
-		$("#homePageStuff").removeClass('hidden');
+		$("#Content").load('html/home.html',
+			function(){
+			addMoreButtonPress();
+		});
+		
+		//$("#homePageStuff").removeClass('hidden');
+
 	}else if($type == "contact"){
 		$("#contactPageStuff").removeClass('hidden');
 			
@@ -307,7 +346,7 @@ function createDataBlockDisplay($dataBlock){
 		class: 'dataBlockDisplayText'
 	}); 
 	var textDiv2 = $("<div></div>").attr({
-		//class: 'dataBlockDisplayText'
+		class: 'dataBlockDisplayDescriptionText'
 	}); 
 
 	var title = $("<h4 class='displayBlock'>"+ $dataBlock.title +" <br /> <small>" + $dataBlock.location + "</small></h4>");

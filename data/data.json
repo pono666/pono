@@ -18,28 +18,28 @@
 				"title":"Contract Flash Developer",
 				"location":"Just Digital People",
 				"dates":[{"from":"Feb '14", "to":"Present"}],
-				"image":"images/justdigitalpeople.jpg",
+				"image":"images/employers/justdigitalpeople.jpg",
 				"description": "I am currently working as a contract flash developer."
 			},
 			{
 				"title":"Flash Developer",
 				"location":"Intrepica",
 				"dates":[{"from":"Sept '12", "to":"Nov '13"}],
-				"image":"images/intrepica.jpg",
+				"image":"images/employers/intrepica.jpg",
 				"description": "The majority of work at Intrepica was on their flagship product 'LiteracyPlanet'. This involved updating old and creating new flash based elements. I created a Facebook app for their yearly 'WordMania' promotion in '12 and '13, along with some web development in '13."
 			},
 			{
 				"title":"UI Programmer",
 				"location":"Sega Studios Australia",
 				"dates":[{"from":"Jun '11", "to":"Jun '12"}],
-				"image":"images/ssa.jpg",
+				"image":"images/employers/ssa.jpg",
 				"description": "I worked on UI elements for Official '12 Olympics Games game using Flash and Scaleform to create menus, HUDs and in game elements. I also fulfilled a personal goal of working for a gaming company."
 			},
 			{
 				"title":"Flash Developer",
 				"location":"Hoodlum",
 				"dates":[{"from":"Apr '10", "to":"May '11"},{"from":"Jun '08","to":"Apr '09"}],
-				"image":"images/hoodlum.jpg",
+				"image":"images/employers/hoodlum.jpg",
 				"description": "At Hoodlum I was involved in creating Flash content to the highest standard for world class clients. Many projects went on to win awards such as Emmys and Baftas. There were tight deadlines and many, many paid for dinners but i look back at this time with great satisfaction. I worked with many talented friends and we created some wonderful projects"
 			}
 			,
@@ -47,7 +47,7 @@
 				"title":"Flash Developer",
 				"location":"Liquid Interactive",
 				"dates":[{"from":"Apr '09", "to":"Mar '10"},{"from":"Dec '06","to":"May '08"}],
-				"image":"images/liquidinteractive.jpg",
+				"image":"images/employers/liquidinteractive.jpg",
 				"description": "Liquid was my first and third job into my career. I worked on a great deal of education materials that had to meet strict educational standards. I was instumental in udating their Flash Development processes, bringing the knowledge to upskill their lead developer from AS2 to AS3"
 			},
 			{
@@ -75,7 +75,7 @@
 				"location":"Self Taught",
 				"dates":[{"from":"Dec '13", "to":"Present"}],
 				"image":"images/me.jpg",
-				"description": "Since being made redudent and the obvious lack of Flash Dev jobs with the inevitable death of Flash coming, I have decided to upskill in Web Development. I have always had a basic knowledge of Web Development which has allowed me to grow on those skills quite easily. I am now proficient in HTML5, CSS3, Javascript, Jquery and Bootstrap and have limited skills with PHP and Apache Server."
+				"description": "Since being made redudent and the obvious lack of Flash Dev jobs with the inevitable death of Flash coming, I have decided to upskill in Web Development. <br />I have always had a basic knowledge of Web Development which has allowed me to grow on those skills quite easily.<br /> I am now proficient in HTML5, CSS3, Javascript, Jquery and Bootstrap and have limited skills with PHP and Apache Server."
 			},
 			{
 				"title":"Bachelor Of Multimedia",
@@ -88,7 +88,7 @@
 				"title":"Certificate in I.T.",
 				"location":"Southbank TAFE",
 				"dates":[{"from":"Apr '00", "to":"Apr '01"}],
-				"image":"images/southbanktafe.jpg",
+				"image":"images/education/southbanktafe.jpg",
 				"description": "This was a basic I.T. course I completed as part of a traineeship at Mt. Gravatt TAFE. I learnt how to build a computer, the basics of networking along with other generic I.T. skills. "
 			},
 			{ 
@@ -110,67 +110,74 @@
 		"projects":
 		[
 			{
+				"title":"Anthony Ponomarenko",
+				"location":"Freelance",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"images/projects/pono.jpg",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			},
+			{
+				"title":"Donnas Cupcakes",
+				"location":"Freelance",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"images/projects/donnascupcakes.jpg",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+			},
+			{
 				"title":"LiteracyPlanet",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
+				"image":"images/projects/literacyplanet.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			},
 			{
 				"title":"WordMania Facebook Australia / Malaysia '13",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
+				"image":"images/projects/wordmania13.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			},
 			{
 				"title":"WordMania Facebook Australia '12",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
+				"image":"images/projects/wordmania12.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			},
 			{
 				"title":"London '12: The Official Video Game",
 				"location":"Sega Studios Australia",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
+				"image":"images/projects/london2012.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			},
 			{
 				"title":"Dance Academy",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
+				"image":"images/projects/danceacademy.jpg",
 				"description": "Lead Developer. '11 KidScreen Awards: Best Television Companion Site WINNER"
 			},
 			{
 				"title":"Slide",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
+				"image":"images/projects/slide.jpg",
 				"description": "'11 AIMIA Awards: Best Cross Platform Nominee,'11 AIMIA Awards: Best Use of Social Media Nominee, '11 AIMIA Awards: Best In Class WINNER, '12 Webby Awards: Best In Class Nominee, '12 International Emmy: Digital Program: Children and Young People Nominee"
-			},
-			{
-				"title":"Primeval Evolved",
-				"location":"Hoodlum",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
-			},
+			},			
 			{
 				"title":"Dharma Wants you",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
+				"image":"images/projects/dharmawantsyou.jpg",
 				"description": "International Emmy Award"
 			}
 			,
 			{
-				"title":"Batman: Who's the Villian",
+				"title":"Batman: Who is the Villian",
 				"location":"Liquid Interactive",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
+				"image":"images/projects/batman.jpg",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
 			}
 		
