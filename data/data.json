@@ -96,7 +96,7 @@
 				"location":"Mt. Gravatt TAFE",
 				"dates":[{"from":"Feb '99", "to":"Dec '99"}],
 				"image":"images/mtgravatttafe.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, perferendis, aliquid ea laborum debitis ducimus harum soluta accusantium ipsum quas deserunt nihil ex nemo quia quod minus animi sunt. Error."
+				"description": "I extended what I have previously learnt to develop multimedia projects with Flash and Director. We were required to build a project for a real-world client, ours being 'A Guide to Brisbane Skate-parks' CD-ROM for the Brisbane City Council. It is still available to this day at public libraries."
 			},
 			{
 				"title":"Certificate in Digital Art",
@@ -114,63 +114,65 @@
 				"location":"Freelance",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/projects/pono.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+				"description": "I created this very site for myself to showcase what I have learnt since changing directions to become a Web Developer. <br />It used HTML5, CSS3, Javascript, Jquery (along with some plugins) and Bootstrap. <br />All data is contained in a JSON file and elements are built from this at run time. PHP is as a query string parser as well as to build a HTML email that is sent to myself and the sender of the contact form.<br />I also used the Validate plugin for JQuery to enhance the validation on the contact form."
 			},
 			{
 				"title":"Donnas Cupcakes",
 				"location":"Freelance",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/projects/donnascupcakes.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+				"description": "This is a small site I created to begin upskilling in Web Development. It was made to order cakes to support fund raising for my participation in the Ride to Conquer Cancer. It was built with HTML5, CSS3 and Javascript.<br />I wrote the image scroller from scratch in JS and used PHP to pull all images from the corresponding directory. It also contains an order form where cake types can be created and added to an order list. This list is then sent in a HTML email via PHP."
 			},
 			{
 				"title":"LiteracyPlanet",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/projects/literacyplanet.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+				"description": "LiteracyPlanet is the flagship product of Intrepica. I worked on many areas within the Flash based product mainly updating and optimising old components. Most notable was recreating a game using a framework that incorporated a physics engine."
 			},
 			{
-				"title":"WordMania Facebook Australia / Malaysia '13",
+				"title":"National WordMania Challenge",
 				"location":"Intrepica",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/projects/wordmania13.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+				"description": "This project consisted of multiple seperate projects. A Facebook app for the 2012 Australian competition. An updated app for the 2013 Australian Competition and also one for the 2013 Malaysian Competition. These used the Facebook Javascript api to perform several operations such as saving high scores, posting to timeline and other social tasks. I also worked on the 2013 web site using HTML5, CSS3 Javascript, Jquery and Bootstrap"
 			},
 			{
-				"title":"WordMania Facebook Australia '12",
-				"location":"Intrepica",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"images/projects/wordmania12.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
-			},
-			{
-				"title":"London '12: The Official Video Game",
+				"title":"London 2012: The Official Video Game",
 				"location":"Sega Studios Australia",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/projects/london2012.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
-			},
-			{
-				"title":"Dance Academy",
-				"location":"Hoodlum",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"images/projects/danceacademy.jpg",
-				"description": "Lead Developer. '11 KidScreen Awards: Best Television Companion Site WINNER"
+				"description": "This was the first Console game I worked on. I was a UI developer and created menus, HUDs and in game elements with Flash and Scaleform. Being a gamer myself, it was also pretty cool to have my name in the credits of a computer game."
 			},
 			{
 				"title":"Slide",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/projects/slide.jpg",
-				"description": "'11 AIMIA Awards: Best Cross Platform Nominee,'11 AIMIA Awards: Best Use of Social Media Nominee, '11 AIMIA Awards: Best In Class WINNER, '12 Webby Awards: Best In Class Nominee, '12 International Emmy: Digital Program: Children and Young People Nominee"
-			},			
+				"description": "<b>Awards</b>: <br />WINNER: AIMIA Awards 2011: Best In Class<br />NOMINEE: International Digital Emmy Awards 2012 – Best  Digital  Program: Fiction <br />By far this was the most ambitious site I have worked on. It was part of a multi-platform experience "
+			}
+			,
+			{
+				"title":"Dance Academy",
+				"location":"Hoodlum",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"images/projects/danceacademy.jpg",
+				"description": "<b>Awards</b>: <br />WINNER: KidScreen Awards 2011: Best Television Companion Site<br /><br />This was the first large project on which I was Lead Developer. It was a project in collaboration with the ABC and ZDF. It was a compliment website to a popular show that had story arcs told through text, audio and video assets made available via a CMS as the show was screened on TV.  "
+			},		
+			{
+				"title":"Salt: Day X Exists",
+				"location":"Hoodlum",
+				"dates":[{"from":"", "to":""},{"from":"","to":""}],
+				"image":"images/projects/salt.jpg",
+				"description": "<b>Awards</b>: <br />WINNER: Primetime Creative Arts Emmy 2009 – Achievement  in  Interactive  Media  Programming<br /><br />"
+			}
+			,
 			{
 				"title":"Dharma Wants you",
 				"location":"Hoodlum",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/projects/dharmawantsyou.jpg",
-				"description": "International Emmy Award"
+				"description": "<b>Awards</b>:<br /> WINNER: Primetime Creative Arts Emmy 2009: Outstanding Creative Achievement in Interactive Media – Fiction.<br /><br />"
 			}
 			,
 			{
@@ -178,20 +180,7 @@
 				"location":"Liquid Interactive",
 				"dates":[{"from":"", "to":""},{"from":"","to":""}],
 				"image":"images/projects/batman.jpg",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
-			}
-		
-		]
-		,
-		
-		"skills":
-		[
-			{
-				"title":"AS3",
-				"location":"Intrepica",
-				"dates":[{"from":"", "to":""},{"from":"","to":""}],
-				"image":"http://www.placehold.it/100x100",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, possimus, reiciendis, perferendis ullam quidem eligendi aperiam repellendus fugit laborum enim cupiditate doloribus veniam obcaecati asperiores dicta fuga sunt maiores nulla?"
+				"description": "Built for Warner Brothers this was the first large scale Flash game on which I was lead developer. It was build from scratch by myself and the at time lead flash developer from the company. I taught him OOP and AS3 "
 			}
 		
 		]
